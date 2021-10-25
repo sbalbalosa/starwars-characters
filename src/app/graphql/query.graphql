@@ -1,0 +1,26 @@
+query films {
+  allFilms {
+    films {
+      id
+      title
+    }
+  }
+}
+
+query characters {
+  allPeople {
+    people {
+      id
+      name
+      gender
+      eyeColor
+      hairColor
+      filmConnection {
+        films {
+          id
+          title
+        }
+      }
+    }
+  }
+}

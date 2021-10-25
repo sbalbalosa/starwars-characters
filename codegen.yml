@@ -1,0 +1,13 @@
+schema: https://swapi-graphql.netlify.app/.netlify/functions/index
+documents: "./src/**/*.graphql"
+generates:
+  src/app/api/generated.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-rtk-query":
+          importBaseApiFrom: "../baseApi"
+          exportHooks: true
+    config:
+      maybeValue: "T"
+      avoidOptionals: true
