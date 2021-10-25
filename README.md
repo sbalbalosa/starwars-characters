@@ -1,44 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Travel Audience - Front End Challenge
 
-## Available Scripts
+### Hi!
 
-In the project directory, you can run:
+This is the application that I built based on the instructions that the company provided.
 
-### `yarn start`
+## Test
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![coverage](public/test.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Screenshot
 
-### `yarn test`
+![screenshot](public/screenshot.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Instructions on how to run
 
-### `yarn build`
+- yarn install
+- yarn start
+- yarn test
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Implemented functionality
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Fetch all star wars characters.
+- Pick favorite characters.
+- Filter characters based on films, eye color, gender and hair color.
+- Download csv on favorite characters
+- Theme & branding based on Star Wars colors
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Not implemented due to time constraint
 
-### `yarn eject`
+- Pagination and windowing of large data set upon initial load.
+- Dedicated 1 character view
+- Cypress end to end testing
+- Performance issues and assessment.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Folder structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- src/components - generic components
+- src/features - components connected with redux and reducer
+- src/app/api - backend api
+- src/mocks - mock data for testing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Technology stack used
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- TypeScript
+- @redux/toolkit for opinionated redux setup
+- RTK Query
+- Jest and React Testing Library for Unit and Integration Test
+- MSW & Faker for integration testing data needs
 
-## Learn More
+# BIG NOTE!!!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I am using redux toolkit it uses [immerjs](https://immerjs.github.io/immer/docs/introduction) behind the scene that enables developer to write mutation operations that are translated to immutable operation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```ts
+// This is immutable operation behind the scene courtesy of immerjs
+toggleIsLoading: (state) => {
+      state.isLoading = !state.isLoading;
+    },
+```
+
+I would love to have your feedback regarding the application. If you have question or would want me to explain parts of it please let me know. If for some reason the app doesn't run please let me know. (sbalbalosa@gmail.com)
+
+Thanks,
+Sharlon Balbalosa
