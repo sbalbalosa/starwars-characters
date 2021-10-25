@@ -32,6 +32,7 @@ This is the application that I built based on the instructions that the company 
 - Dedicated 1 character view
 - Cypress end to end testing
 - Performance issues and assessment.
+- Local storage to persist favorites
 
 ### Folder structure
 
@@ -48,7 +49,7 @@ This is the application that I built based on the instructions that the company 
 - Jest and React Testing Library for Unit and Integration Test
 - MSW & Faker for integration testing data needs
 
-# BIG NOTE!!!
+# Note
 
 I am using redux toolkit it uses [immerjs](https://immerjs.github.io/immer/docs/introduction) behind the scene that enables developer to write mutation operations that are translated to immutable operation
 
