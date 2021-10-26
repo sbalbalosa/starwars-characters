@@ -1,8 +1,16 @@
-# Travel Audience - Front End Challenge
+# Star Wars Demo - TypeScript, React, GraphQL, MSW, Redux, RTK, Jest, Testing Library
 
 ### Hi!
 
-This is the application that I built based on the instructions that the company provided.
+This is a demo application that shows Star Wars characters which includes functionality such as saving, download csv and filtering records.
+
+### Technology stack used
+
+- TypeScript
+- @redux/toolkit for opinionated redux setup
+- RTK Query
+- Jest and React Testing Library for Unit and Integration Test
+- MSW & Faker for integration testing data needs
 
 ## Test
 
@@ -18,36 +26,12 @@ This is the application that I built based on the instructions that the company 
 - yarn start
 - yarn test
 
-### Implemented functionality
-
-- Fetch all star wars characters.
-- Pick favorite characters.
-- Filter characters based on films, eye color, gender and hair color.
-- Download csv on favorite characters
-- Theme & branding based on Star Wars colors
-
-### Not implemented due to time constraint
-
-- Pagination and windowing of large data set upon initial load.
-- Dedicated 1 character view
-- Cypress end to end testing
-- Performance issues and assessment.
-- Local storage to persist favorites
-
 ### Folder structure
 
 - src/components - generic components
 - src/features - components connected with redux and reducer
 - src/app/api - backend api
 - src/mocks - mock data for testing
-
-### Technology stack used
-
-- TypeScript
-- @redux/toolkit for opinionated redux setup
-- RTK Query
-- Jest and React Testing Library for Unit and Integration Test
-- MSW & Faker for integration testing data needs
 
 # Note
 
